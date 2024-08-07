@@ -21,34 +21,916 @@
 		<script src="js/rs-header.js" defer></script>
 		<header>
 			<div class="rs-header">
+				<div class="rs-header__container">
+					<div class="rs-header__wrapper">
+						<div class="rs-header__logo">
+							<a href="#">
+								<img src="./img/header/logo.svg" alt="">
+							</a>
+						</div>
+
+						<div class="rs-header__menu menu">
+							<button type="button" class="menu__icon icon-menu">
+								<span class="menu__icon_burger">
+									<svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M2.65625 8.5H14.3438" stroke="white" stroke-width="1.7"
+											stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M2.65625 4.25H14.3438" stroke="white" stroke-width="1.7"
+											stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M2.65625 12.75H14.3438" stroke="white" stroke-width="1.7"
+											stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</span>
+								<span class="menu__icon_text">
+									<span>Меню</span>
+									<span>Закрыть</span>
+								</span>
+							</button>
+
+							<div class="menu__block">
+								<nav class="menu__body">
+									<ul class="menu__list">
+										<li class="menu-item menu__dropdown">
+											<a href="#">Каталог товаров</a>
+
+											<ul class="menu__dropdown_list" hidden>
+												<li class="menu-item menu__dropdown">
+													<a href="#">Грувлочные соединения</a>
+
+													<ul class="menu__dropdown_list" hidden>
+														<li class="menu-item menu__dropdown">
+															<a href="#">Муфты</a>
+
+															<ul class="menu__dropdown_list" hidden>
+																<li class="menu-item">
+																	<a href="#">Муфты жесткие стандартные грувлок
+																		SOLIDEZ</a>
+																</li>
+
+																<li class="menu-item">
+																	<a href="#">Муфты гибкие стандартные грувлок
+																		SOLIDEZ</a>
+																</li>
+															</ul>
+														</li>
+
+														<li class="menu-item">
+															<a href="#">Тройники</a>
+														</li>
+
+														<li class="menu-item">
+															<a href="#">Переходы</a>
+														</li>
+													</ul>
+												</li>
+
+												<li class="menu-item">
+													<a href="#">Фитинги под приварку</a>
+												</li>
+
+												<li class="menu-item">
+													<a href="#">SML канализация</a>
+												</li>
+
+												<li class="menu-item">
+													<a href="#">Станки для накатки желоба</a>
+												</li>
+											</ul>
+										</li>
+
+										<li class="menu-item">
+											<a href="#">О компании</a>
+										</li>
+
+										<li class="menu-item">
+											<a href="#">Услуги для проектировщиков</a>
+										</li>
+
+										<li class="menu-item">
+											<a href="#">Цены</a>
+										</li>
+
+										<li class="menu-item">
+											<a href="#">Контакты</a>
+										</li>
+									</ul>
+								</nav>
+
+								<div class="menu__contact">
+									<h6>Свяжитесь с нами</h6>
+									<ul class="menu__list">
+										<li class="menu-item">
+											<a href="mailto:info@lidergroove.ru">
+												info@lidergroove.ru
+											</a>
+										</li>
+										<li class="menu-item">
+											<a href="tel:74957890305">
+												+7 (495) 789-03-05
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<a href="#" class="rs-header__cart">
+							<div class="rs-header__cart_block">
+								<div class="rs-header__cart_icon">
+									<svg width="31" height="31" viewBox="0 0 31 31" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M6.31629 4.22222H30L26.7778 15.5H8.05137M28.3889 21.9444H9.05556L5.83333 1H1M10.6667 28.3889C10.6667 29.2787 9.94535 30 9.05556 30C8.16576 30 7.44444 29.2787 7.44444 28.3889C7.44444 27.4991 8.16576 26.7778 9.05556 26.7778C9.94535 26.7778 10.6667 27.4991 10.6667 28.3889ZM28.3889 28.3889C28.3889 29.2787 27.6676 30 26.7778 30C25.888 30 25.1667 29.2787 25.1667 28.3889C25.1667 27.4991 25.888 26.7778 26.7778 26.7778C27.6676 26.7778 28.3889 27.4991 28.3889 28.3889Z"
+											stroke="white" stroke-width="2" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</div>
+								<div class="rs-header__cart_count">99+</div>
+							</div>
+						</a>
+					</div>
+				</div>
 			</div>
 		</header>
 
 		<main class="page">
 
 			<link rel="stylesheet" href="css/rs-slider.css">
-			<section class="rs-slider"></section>
+			<section class="rs-slider" data-aos="fade" data-aos-delay="100">
+				<div class="rs-slider__bg">
+					<picture>
+						<source srcset="./img/blocks/slider/slider_bg-logo.png" media="(min-width: 991.98px)">
+						<img src="./img/blocks/slider/slider_bg-min-logo.png" alt="">
+					</picture>
+				</div>
+				<div class="rs-slider__slider swiper">
+					<div class="rs-slider__swiper swiper-wrapper">
+						<div class="rs-slider__slide swiper-slide">
+							<div class="rs-slider__imgs">
+								<div class="rs-slider__img" data-prlx-mouse data-prlx-cx="500" data-prlx-cy="500"
+									data-prlx-dxr data-prlx-dyr>
+									<picture>
+										<source srcset="./img/blocks/slider/slider_bg-1.1.png"
+											media="(min-width: 991.98px)">
+										<img src="./img/blocks/slider/slider_bg-min-1.1.png" alt="">
+									</picture>
+								</div>
+								<div class="rs-slider__img" data-prlx-mouse data-prlx-cx="1000" data-prlx-cy="1000">
+									<picture>
+										<source srcset="./img/blocks/slider/slider_bg-1.2.png"
+											media="(min-width: 991.98px)">
+										<img src="./img/blocks/slider/slider_bg-min-1.2.png" alt="">
+									</picture>
+								</div>
+								<div class="rs-slider__img" data-prlx-mouse data-prlx-cx="1500" data-prlx-cy="1500">
+									<picture>
+										<source srcset="./img/blocks/slider/slider_bg-1.3.png"
+											media="(min-width: 991.98px)">
+										<img src="./img/blocks/slider/slider_bg-min-1.3.png" alt="">
+									</picture>
+								</div>
+							</div>
+							<div class="rs-slider__content">
+								<div class="rs-slider__container">
+									<div class="rs-slider__body">
+										<h1>Эффективное техническое сопровождение</h1>
+										<h5>Наши специалисты помогут вам с расчётом проекта, монтажом
+											и обучением на объекте</h5>
+										<div class="rs-slider__buttons">
+											<a href="#" class="rs-btn _btn-primary">Подробнее</a>
+											<a href="#" class="rs-btn _btn-border-white">Вызвать специалиста</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="rs-slider__slide swiper-slide">
+							<div class="rs-slider__imgs">
+								<div class="rs-slider__img" data-prlx-mouse data-prlx-cx="500" data-prlx-cy="500"
+									data-prlx-dxr data-prlx-dyr>
+									<picture>
+										<source srcset="./img/blocks/slider/slider_bg-2.1.png"
+											media="(min-width: 991.98px)">
+										<img src="./img/blocks/slider/slider_bg-min-2.1.png" alt="">
+									</picture>
+								</div>
+								<div class="rs-slider__img" data-prlx-mouse data-prlx-cx="1000" data-prlx-cy="1000">
+									<picture>
+										<source srcset="./img/blocks/slider/slider_bg-2.2.png"
+											media="(min-width: 991.98px)">
+										<img src="./img/blocks/slider/slider_bg-min-2.2.png" alt="">
+									</picture>
+								</div>
+								<div class="rs-slider__img" data-prlx-mouse data-prlx-cx="1500" data-prlx-cy="1500">
+									<picture>
+										<source srcset="./img/blocks/slider/slider_bg-2.3.png"
+											media="(min-width: 991.98px)">
+										<img src="./img/blocks/slider/slider_bg-min-2.3.png" alt="">
+									</picture>
+								</div>
+							</div>
+							<div class="rs-slider__content">
+								<div class="rs-slider__container">
+									<div class="rs-slider__body">
+										<h1>Широкий ассортимент продукции для вашего бизнеса</h1>
+										<h5>Предлагаем разнообразие складских запасов, включая продукцию под собственным
+											брендом «SOLIDEZ» и товары от других производителей для удовлетворения ваших
+											потребностей</h5>
+										<div class="rs-slider__buttons">
+											<a href="#" class="rs-btn _btn-primary">В каталог</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="rs-slider__slide swiper-slide">
+							<div class="rs-slider__imgs">
+								<div class="rs-slider__img" data-prlx-mouse data-prlx-cx="500" data-prlx-cy="500"
+									data-prlx-dxr data-prlx-dyr>
+									<picture>
+										<source srcset="./img/blocks/slider/slider_bg-3.1.png"
+											media="(min-width: 991.98px)">
+										<img src="./img/blocks/slider/slider_bg-min-3.1.png" alt="">
+									</picture>
+								</div>
+								<div class="rs-slider__img" data-prlx-mouse data-prlx-cx="1000" data-prlx-cy="1000">
+									<picture>
+										<source srcset="./img/blocks/slider/slider_bg-3.2.png"
+											media="(min-width: 991.98px)">
+										<img src="./img/blocks/slider/slider_bg-min-3.2.png" alt="">
+									</picture>
+								</div>
+								<div class="rs-slider__img" data-prlx-mouse data-prlx-cx="1500" data-prlx-cy="1500">
+									<picture>
+										<source srcset="./img/blocks/slider/slider_bg-3.3.png"
+											media="(min-width: 991.98px)">
+										<img src="./img/blocks/slider/slider_bg-min-3.3.png" alt="">
+									</picture>
+								</div>
+							</div>
+							<div class="rs-slider__content">
+								<div class="rs-slider__container">
+									<div class="rs-slider__body">
+										<h1>Увеличение эффективности с помощью пересчета проектов</h1>
+										<h5>Оптимизация результатов и ресурсов через пересмотр текущих проектов для
+											повышения производительности</h5>
+										<div class="rs-slider__buttons">
+											<a href="#" class="rs-btn _btn-primary">Подробнее</a>
+											<a href="#" class="rs-btn _btn-border-white">Вызвать специалиста</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="rs-slider__pagination swiper-pagination"></div>
+				</div>
+			</section>
 
 			<link rel="stylesheet" href="css/rs-catalog.css">
-			<section class="rs-catalog"></section>
+			<section class="rs-catalog">
+				<div class="rs-catalog__container">
+					<h2>Каталог товаров</h2>
+
+					<div class="rs-catalog__wrapper">
+						<div class="rs-catalog__list">
+							<div class="rs-catalog__block" data-aos="fade-up" data-aos-delay="100">
+								<a href="#" class="rs-catalog__link">
+									<div class="rs-catalog__item">
+										<div class="rs-catalog__img">
+											<img src="./img/blocks/catalog/kt_1.png" alt="">
+										</div>
+										<div class="rs-catalog__head">
+											<h5>Грувлочные соединения</h5>
+										</div>
+										<div class="rs-catalog__footer">
+											<div class="rs-btn _btn-border-second">Подробнее</div>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="rs-catalog__block" data-aos="fade-up" data-aos-delay="200">
+								<a href="#" class="rs-catalog__link">
+									<div class="rs-catalog__item">
+										<div class="rs-catalog__img">
+											<img src="./img/blocks/catalog/kt_2.png" alt="">
+										</div>
+										<div class="rs-catalog__head">
+											<h5>Фитинги под приварку</h5>
+										</div>
+										<div class="rs-catalog__footer">
+											<div class="rs-btn _btn-border-second">Подробнее</div>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="rs-catalog__block" data-aos="fade-up" data-aos-delay="300">
+								<a href="#" class="rs-catalog__link">
+									<div class="rs-catalog__item">
+										<div class="rs-catalog__img">
+											<img src="./img/blocks/catalog/kt_3.png" alt="">
+										</div>
+										<div class="rs-catalog__head">
+											<h5>Станки для накатки желоба</h5>
+										</div>
+										<div class="rs-catalog__footer">
+											<div class="rs-btn _btn-border-second">Подробнее</div>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="rs-catalog__block" data-aos="fade-up" data-aos-delay="400">
+								<a href="#" class="rs-catalog__link">
+									<div class="rs-catalog__item">
+										<div class="rs-catalog__img">
+											<img src="./img/blocks/catalog/kt_4.png" alt="">
+										</div>
+										<div class="rs-catalog__head">
+											<h5>SML канализация</h5>
+										</div>
+										<div class="rs-catalog__footer">
+											<div class="rs-btn _btn-border-second">Подробнее</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
 			<link rel="stylesheet" href="css/rs-product-slider.css">
-			<section class="rs-product-slider"></section>
+			<section class="rs-product-slider">
+				<div class="rs-product-slider__container">
+					<h2>Лидеры продаж</h2>
+
+					<div class="rs-product-slider__slider swiper">
+						<div class="rs-product-slider__swiper swiper-wrapper">
+							<div class="rs-product-slider__slide swiper-slide">
+								<div class="product" data-aos="fade-up" data-aos-delay="100">
+									<div class="product__img">
+										<a href="#">
+											<img src="./img/blocks/product/product_1.jpg" alt="">
+										</a>
+									</div>
+									<div class="product__desc">
+										<div class="product__desc_body">
+											<h6>Муфта жёсткая стандартная грувлок</h6>
+											<ul>
+												<li>
+													Артикул: <span>XGQT01</span>
+
+												</li>
+												<li>
+													Цвет: <span>Красный</span>
+												</li>
+												<li>
+													Описание:
+													<p>Жёсткая муфта с конструкцией “шип-паз” для применения в трубах,
+														где
+														требуется жёсткость, включая клапанные соединения, пожарные
+														водопроводы, на длинных прямых участках трубопровода</p>
+												</li>
+											</ul>
+
+											<div class="product__buttons">
+												<a href="#" class="rs-btn _btn-primary">Подробнее</a>
+												<a href="#" class="rs-btn _btn-second">
+													<svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M19.5 10C19.5 14.9706 15.4706 19 10.5 19C8.46359 19 1.50072 19 1.50072 19C1.50072 19 3.05992 15.2561 2.43591 14.0008C1.83685 12.7956 1.5 11.4372 1.5 10C1.5 5.02944 5.52943 1 10.5 1C15.4706 1 19.5 5.02944 19.5 10Z"
+															stroke="white" stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="rs-product-slider__slide swiper-slide">
+								<div class="product" data-aos="fade-up" data-aos-delay="200">
+									<div class="product__img">
+										<a href="#">
+											<img src="./img/blocks/product/product_2.jpg" alt="">
+										</a>
+									</div>
+									<div class="product__desc">
+										<div class="product__desc_body">
+											<h6>Муфта жёсткая стандартная грувлок</h6>
+											<ul>
+												<li>
+													Артикул: <span>XGQT01</span>
+
+												</li>
+												<li>
+													Цвет: <span>Красный</span>
+												</li>
+												<li>
+													Описание:
+													<p>Жёсткая муфта с конструкцией “шип-паз” для применения в трубах,
+														где
+														требуется жёсткость, включая клапанные соединения, пожарные
+														водопроводы, на длинных прямых участках трубопровода</p>
+												</li>
+											</ul>
+
+											<div class="product__buttons">
+												<a href="#" class="rs-btn _btn-primary">Подробнее</a>
+												<a href="#" class="rs-btn _btn-second">
+													<svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M19.5 10C19.5 14.9706 15.4706 19 10.5 19C8.46359 19 1.50072 19 1.50072 19C1.50072 19 3.05992 15.2561 2.43591 14.0008C1.83685 12.7956 1.5 11.4372 1.5 10C1.5 5.02944 5.52943 1 10.5 1C15.4706 1 19.5 5.02944 19.5 10Z"
+															stroke="white" stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="rs-product-slider__slide swiper-slide">
+								<div class="product" data-aos="fade-up" data-aos-delay="300">
+									<div class="product__img">
+										<a href="#">
+											<img src="./img/blocks/product/product_3.jpg" alt="">
+										</a>
+									</div>
+									<div class="product__desc">
+										<div class="product__desc_body">
+											<h6>Муфта жёсткая стандартная грувлок</h6>
+											<ul>
+												<li>
+													Артикул: <span>XGQT01</span>
+
+												</li>
+												<li>
+													Цвет: <span>Красный</span>
+												</li>
+												<li>
+													Описание:
+													<p>Жёсткая муфта с конструкцией “шип-паз” для применения в трубах,
+														где
+														требуется жёсткость, включая клапанные соединения, пожарные
+														водопроводы, на длинных прямых участках трубопровода</p>
+												</li>
+											</ul>
+
+											<div class="product__buttons">
+												<a href="#" class="rs-btn _btn-primary">Подробнее</a>
+												<a href="#" class="rs-btn _btn-second">
+													<svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M19.5 10C19.5 14.9706 15.4706 19 10.5 19C8.46359 19 1.50072 19 1.50072 19C1.50072 19 3.05992 15.2561 2.43591 14.0008C1.83685 12.7956 1.5 11.4372 1.5 10C1.5 5.02944 5.52943 1 10.5 1C15.4706 1 19.5 5.02944 19.5 10Z"
+															stroke="white" stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="rs-product-slider__slide swiper-slide">
+								<div class="product" data-aos="fade-up" data-aos-delay="400">
+									<div class="product__img">
+										<a href="#">
+											<img src="./img/blocks/product/product_4.jpg" alt="">
+										</a>
+									</div>
+									<div class="product__desc">
+										<div class="product__desc_body">
+											<h6>Муфта жёсткая стандартная грувлок</h6>
+											<ul>
+												<li>
+													Артикул: <span>XGQT01</span>
+
+												</li>
+												<li>
+													Цвет: <span>Красный</span>
+												</li>
+												<li>
+													Описание:
+													<p>Жёсткая муфта с конструкцией “шип-паз” для применения в трубах,
+														где
+														требуется жёсткость, включая клапанные соединения, пожарные
+														водопроводы, на длинных прямых участках трубопровода</p>
+												</li>
+											</ul>
+
+											<div class="product__buttons">
+												<a href="#" class="rs-btn _btn-primary">Подробнее</a>
+												<a href="#" class="rs-btn _btn-second">
+													<svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M19.5 10C19.5 14.9706 15.4706 19 10.5 19C8.46359 19 1.50072 19 1.50072 19C1.50072 19 3.05992 15.2561 2.43591 14.0008C1.83685 12.7956 1.5 11.4372 1.5 10C1.5 5.02944 5.52943 1 10.5 1C15.4706 1 19.5 5.02944 19.5 10Z"
+															stroke="white" stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
 			<link rel="stylesheet" href="css/rs-services.css">
-			<section class="rs-services"></section>
+			<section class="rs-services">
+				<div class="rs-services__container">
+					<h2>Услуги для проектировщиков</h2>
+
+					<div class="rs-services__wrapper">
+						<div class="rs-services__blocks">
+							<div class="rs-services__list">
+								<div class="rs-services__block" data-aos="fade-up" data-aos-delay="100">
+									<div class="rs-services__item">
+										<div class="rs-services__bg">
+											<img src="./img/blocks/service/service_1.jpg" alt="">
+										</div>
+									</div>
+								</div>
+
+								<div class="rs-services__block" data-aos="fade-up" data-aos-delay="200">
+									<div class="rs-services__item">
+										<div class="rs-services__img">
+											<img src="./img/blocks/service/service_2.svg" alt="">
+										</div>
+										<div class="rs-services__desc">
+											<h5>Консультации</h5>
+											<a href="#" class="rs-btn _btn-border-second">Подробнее</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="rs-services__block" data-aos="fade-up" data-aos-delay="300">
+									<div class="rs-services__item">
+										<div class="rs-services__bg">
+											<img src="./img/blocks/service/service_3.jpg" alt="">
+										</div>
+									</div>
+								</div>
+
+								<div class="rs-services__block" data-aos="fade-up" data-aos-delay="400">
+									<div class="rs-services__item">
+										<div class="rs-services__img">
+											<img src="./img/blocks/service/service_4.svg" alt="">
+										</div>
+										<div class="rs-services__desc">
+											<h5>Пересчёт проектов</h5>
+											<a href="#" class="rs-btn _btn-border-second">Подробнее</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="rs-services__block" data-aos="fade-up" data-aos-delay="500">
+									<div class="rs-services__item">
+										<div class="rs-services__bg">
+											<img src="./img/blocks/service/service_5.jpg" alt="">
+										</div>
+									</div>
+								</div>
+
+								<div class="rs-services__block" data-aos="fade-up" data-aos-delay="600">
+									<div class="rs-services__item">
+										<div class="rs-services__img">
+											<img src="./img/blocks/service/service_6.svg" alt="">
+										</div>
+										<div class="rs-services__desc">
+											<h5>BIM моделирование</h5>
+											<a href="#" class="rs-btn _btn-border-second">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="rs-services__banner">
+							<div class="rs-services__banner_body">
+								<div class="rs-services__banner_img">
+									<img src="./img/blocks/service/form_img.jpg" alt="">
+								</div>
+								<div class="rs-services__banner_desc">
+									<h4>Свяжитесь с нами</h4>
+									<p>Получите консультацию по любому вопросу</p>
+									<a href="#" class="rs-btn _btn-white">Подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
 			<link rel="stylesheet" href="css/rs-text-block.css">
-			<section class="rs-text-block"></section>
+			<section class="rs-text-block">
+				<div class="rs-text-block__container">
+					<div class="rs-text-block__wrapper">
+						<div class="rs-text-block__img" data-aos="fade-up" data-aos-delay="100">
+							<img src="./img/blocks/about/about_img.jpg" alt="">
+						</div>
+						<div class="rs-text-block__desc" data-aos="fade-up" data-aos-delay="200">
+							<h2>Комплектация строительных объектов ООО «ТПК СОЛИДЕЗ»</h2>
+							<p>Наша компания специализируется на поставках комплектующих на системы ВК (водопровод,
+								канализация) и стремится расширять свой ассортимент на постоянной основе. Сейчас мы
+								можем поставить грувлочные соединения, фитинги под приварку и резьбовые фасонные
+								конструкции. </p>
+							<p>Сотрудники компании имеют многолетний успешный опыт в комплектации строительных
+								объектов. Их высокая квалификация позволяет нам налаживать долгосрочные партнерские
+								отношения с застройщиками, проектировщиками и монтажниками с целью обеспечения
+								своевременного и качественного выполнения работ на объектах.</p>
+							<blockquote class="rs-blockquote">
+								<p>Сотрудничество с нами будет комфортным, потому что мы обладаем профессиональными
+									навыками в решении поставленных задач и создании атмосферы взаимного доверия!</p>
+								<a href="#" class="rs-btn _btn-white">Подробнее</a>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+			</section>
 
 			<link rel="stylesheet" href="css/rs-features.css">
-			<section class="rs-features"></section>
+			<section class="rs-features">
+				<div class="rs-features__container">
+					<div class="rs-features__slider swiper">
+						<div class="rs-features__swiper swiper-wrapper">
+							<div class="rs-features__slide swiper-slide">
+								<div class="rs-features__item" data-aos="fade-up" data-aos-delay="100">
+									<div class="rs-features__num">01</div>
+									<div class="rs-features__desc">
+										<h6>Надежность и безопасность</h6>
+										<p>Гарантируем сдачу объекта при гидравлических испытаниях.</p>
+									</div>
+								</div>
+							</div>
+							<div class="rs-features__slide swiper-slide">
+								<div class="rs-features__item" data-aos="fade-up" data-aos-delay="200">
+									<div class="rs-features__num">02</div>
+									<div class="rs-features__desc">
+										<h6>Быстрая обработка заявки</h6>
+										<p>Получите обратную связь в течение 15 минут от поступления заявки</p>
+									</div>
+								</div>
+							</div>
+							<div class="rs-features__slide swiper-slide">
+								<div class="rs-features__item" data-aos="fade-up" data-aos-delay="300">
+									<div class="rs-features__num">03</div>
+									<div class="rs-features__desc">
+										<h6>Возможность отгрузки день в день</h6>
+										<p>Можем отгрузить продукцию в день поступления заявки</p>
+									</div>
+								</div>
+							</div>
+							<div class="rs-features__slide swiper-slide">
+								<div class="rs-features__item" data-aos="fade-up" data-aos-delay="400">
+									<div class="rs-features__num">04</div>
+									<div class="rs-features__desc">
+										<h6>Наличие эксклюзивных позиций</h6>
+										<p>У нас вы можете найти позиции, которых нет у других поставщиков</p>
+									</div>
+								</div>
+							</div>
+							<div class="rs-features__slide swiper-slide">
+								<div class="rs-features__item" data-aos="fade-up" data-aos-delay="100">
+									<div class="rs-features__num">05</div>
+									<div class="rs-features__desc">
+										<h6>Широкий ассортимент</h6>
+										<p>Поддерживаем широкий ассортимент продукции на складе с регулярным пополнением
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="rs-features__slide swiper-slide">
+								<div class="rs-features__item" data-aos="fade-up" data-aos-delay="200">
+									<div class="rs-features__num">06</div>
+									<div class="rs-features__desc">
+										<h6>Возможность обмена или возврата</h6>
+										<p>Минимизируйте свои расходы, если фактический результат не соответствует
+											проекту
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="rs-features__slide swiper-slide">
+								<div class="rs-features__item" data-aos="fade-up" data-aos-delay="300">
+									<div class="rs-features__num">07</div>
+									<div class="rs-features__desc">
+										<h6>Техническая консультация</h6>
+										<p>Решим ваши технические вопросы как по телефону, так и с выездом на объект.
+											Проводим обучение для монтажников</p>
+									</div>
+								</div>
+							</div>
+							<div class="rs-features__slide swiper-slide">
+								<div class="rs-features__item" data-aos="fade-up" data-aos-delay="400">
+									<div class="rs-features__num">08</div>
+									<div class="rs-features__desc">
+										<h6>Качественные материалы</h6>
+										<p>В нашем арсенале изделия из высокопрочного чугуна, выдерживающий давление до
+											40 бар!</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
 		</main>
 
 		<link rel="stylesheet" href="css/rs-footer.css" />
 		<footer>
-			<div class="rs-footer">
+			<div class="rs-footer" data-aos="fade-up" data-aos-delay="100">
+				<div class="rs-footer__top">
+					<div class="rs-footer__container">
+						<div class="rs-footer__wrapper">
+							<div class="rs-footer__title">
+								<h6>Нужна консультация специалиста?</h6>
+							</div>
+
+							<div class="rs-footer__request">
+								<div class="form">
+									<form action="#" class="form__form">
+										<div class="form__wrapper">
+											<div class="form__block">
+												<div class="form__row">
+													<div class="form__line">
+														<input autocomplete="off" type="text" name="form[]" required
+															placeholder="Ваше имя" class="rs-input">
+													</div>
+													<div class="form__line">
+														<input autocomplete="off" type="email" name="form[]" required
+															placeholder="E-mail" class="rs-input">
+													</div>
+													<div class="form__line">
+														<input autocomplete="off" type="text" name="form[]" required
+															placeholder="Телефон" class="rs-input">
+													</div>
+													<div class="form__agreement">
+														<div class="form__checkbox">
+															<label>
+																<input type="checkbox" required>
+																<span class="checkbox"></span>
+																<span class="checkbox-label">Даю своё согласие на
+																	обработку
+																	персональных данных в соответствии с
+																	<a href="#">пользовательским соглашением</a></span>
+															</label>
+														</div>
+													</div>
+													<div class="form__button">
+														<button type="submit" class="rs-btn _btn-primary">
+															Оставить заявку
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="rs-footer__bottom">
+					<div class="rs-footer__container">
+						<div class="rs-footer__wrapper">
+							<div data-spollers="991.98, max" data-one-spoller class="rs-footer__spollers">
+								<div class="rs-footer__spollers_item">
+									<button type="button" data-spoller
+										class="rs-footer__spollers_title  _spoller-active">
+										<span>информация о компании</span>
+										<svg class="rs-footer__spollers_icon" viewBox="0 0 19 11" fill="none">
+											<path d="M17.9998 1.50022L9.75 9.75L1.50022 1.50022" stroke="black"
+												stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+									<div class="rs-footer__spollers_body">
+										<p>ООО «ТПК СОЛИДЕЗ» – компания по поставке грувлочных соединений для инженерных
+											систем зданий. Мы предлагаем как продукцию под собственной торговой маркой
+											«SOLIDEZ», так и продукцию ведущих производителей отрасли.</p>
+									</div>
+								</div>
+
+								<div class="rs-footer__spollers_item">
+									<button type="button" data-spoller class="rs-footer__spollers_title">
+										<span>контактная информация</span>
+										<svg class="rs-footer__spollers_icon" viewBox="0 0 19 11" fill="none">
+											<path d="M17.9998 1.50022L9.75 9.75L1.50022 1.50022" stroke="black"
+												stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+									<div class="rs-footer__spollers_body">
+										<ul>
+											<li>
+												<a href="tel:74957890305">
+													<svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M12.5277 0.624871L9.88717 0.0155086C9.60026 -0.0505056 9.30574 0.0992959 9.18894 0.368431L7.97022 3.21212C7.86358 3.46094 7.93467 3.75293 8.14541 3.92304L9.68405 5.18239C8.77001 7.12981 7.17297 8.7497 5.18492 9.68151L3.92558 8.14288C3.75292 7.93214 3.46347 7.86105 3.21465 7.96768L0.37096 9.18641C0.0992859 9.30574 -0.0505158 9.60027 0.0154985 9.88717L0.624861 12.5277C0.688336 12.802 0.932081 13 1.21899 13C7.7214 13 13 7.73156 13 1.219C13 0.93463 12.8045 0.688346 12.5277 0.624871Z"
+															fill="white" />
+													</svg>
+													+7 (495) 789-03-05
+												</a>
+											</li>
+											<li>
+												<a href="mailto:info@lidergroove.ru">
+													<svg width="15" height="13" viewBox="0 0 15 13" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M14.7158 4.58984C14.8301 4.49902 15 4.58398 15 4.72754V10.7188C15 11.4951 14.3701 12.125 13.5938 12.125H1.40625C0.629883 12.125 0 11.4951 0 10.7188V4.73047C0 4.58398 0.166992 4.50195 0.28418 4.59277C0.94043 5.10254 1.81055 5.75 4.79883 7.9209C5.41699 8.37207 6.45996 9.32129 7.5 9.31543C8.5459 9.32422 9.60938 8.35449 10.2041 7.9209C13.1924 5.75 14.0596 5.09961 14.7158 4.58984ZM7.5 8.375C8.17969 8.38672 9.1582 7.51953 9.65039 7.16211C13.5381 4.34082 13.834 4.09473 14.7305 3.3916C14.9004 3.25977 15 3.05469 15 2.83789V2.28125C15 1.50488 14.3701 0.875 13.5938 0.875H1.40625C0.629883 0.875 0 1.50488 0 2.28125V2.83789C0 3.05469 0.0996094 3.25684 0.269531 3.3916C1.16602 4.0918 1.46191 4.34082 5.34961 7.16211C5.8418 7.51953 6.82031 8.38672 7.5 8.375Z"
+															fill="white" />
+													</svg>
+													info@lidergroove.ru
+												</a>
+											</li>
+											<li>
+												<svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.5 0C3.35685 0 0 3.35685 0 7.5C0 11.6431 3.35685 15 7.5 15C11.6431 15 15 11.6431 15 7.5C15 3.35685 11.6431 0 7.5 0ZM9.22681 10.5877L6.55948 8.64919C6.46573 8.57964 6.41129 8.47077 6.41129 8.35585V3.26613C6.41129 3.06653 6.5746 2.90323 6.77419 2.90323H8.22581C8.4254 2.90323 8.58871 3.06653 8.58871 3.26613V7.43044L10.5091 8.82762C10.6724 8.94556 10.7056 9.17238 10.5877 9.33569L9.73488 10.5091C9.61693 10.6694 9.39012 10.7056 9.22681 10.5877Z"
+														fill="white" />
+												</svg>
+												Пн – Чт с 09:00 до 18:00<br>
+												Пт с 09:00 до 17:00
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="rs-footer__spollers_item">
+									<button type="button" data-spoller class="rs-footer__spollers_title">
+										<span>Каталог</span>
+										<svg class="rs-footer__spollers_icon" viewBox="0 0 19 11" fill="none">
+											<path d="M17.9998 1.50022L9.75 9.75L1.50022 1.50022" stroke="black"
+												stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+									<div class="rs-footer__spollers_body">
+										<nav>
+											<ul>
+												<li><a href="#">Грувлочные соединения</a></li>
+												<li><a href="#">Фитинги под приварку</a></li>
+												<li><a href="#">SML канализация</a></li>
+												<li><a href="#">Станки для накатки желоба</a></li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+
+								<div class="rs-footer__spollers_item">
+									<button type="button" data-spoller class="rs-footer__spollers_title">
+										<span>Информация</span>
+										<svg class="rs-footer__spollers_icon" viewBox="0 0 19 11" fill="none">
+											<path d="M17.9998 1.50022L9.75 9.75L1.50022 1.50022" stroke="black"
+												stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+									<div class="rs-footer__spollers_body">
+										<nav>
+											<ul>
+												<li><a href="#">Главная</a></li>
+												<li><a href="#">О компании</a></li>
+												<li><a href="#">Цены</a></li>
+												<li><a href="#">Контакты</a></li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="rs-footer__footer">
+					<div class="rs-footer__container">
+						<div class="rs-footer__wrapper">
+							<div class="rs-footer__copyright">© ООО «ТПК СОЛИДЕЗ» 2024. Все права защищены.</div>
+
+							<div class="rs-footer__develop">
+								<a href="#">Разработано в Россайт</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</footer>
 

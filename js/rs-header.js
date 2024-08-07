@@ -259,11 +259,10 @@ Header при скролле
 function headerScroll() {
 	const header = document.querySelector('.rs-header');
 	const headerTag = document.querySelector('header');
-	let lastScrollTop = 0;
 
 	function headerClassAdd() {
 		header.classList.toggle('_header-scroll', window.scrollY > 1000)
-		header.classList.toggle('_header-change', window.scrollY > 800)
+		header.classList.toggle('_header-change', window.scrollY > 300)
 	}
 
 	window.addEventListener('scroll', function () {
@@ -271,9 +270,11 @@ function headerScroll() {
 	})
 	window.addEventListener('load', function () {
 		headerClassAdd()
+		headerTag.style.height = header.clientHeight + 'px';
 	})
 	window.addEventListener('resize', function () {
 		headerClassAdd()
+		headerTag.style.height = header.clientHeight + 'px';
 	})
 }
 headerScroll()
